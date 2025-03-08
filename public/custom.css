@@ -1,0 +1,19 @@
+.bg-jumbotron{
+    background-image: linear-gradient(to right, white, transparent), url('/gambar/hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* .item img {
+    height: 400px;
+    object-fit: cover;
+} */
+
+.card-body {
+    min-height: 400px; /* Sesuaikan dengan tinggi minimum yang Anda inginkan */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
