@@ -20,8 +20,12 @@ class CreateBusana extends CreateRecord
             ->schema([
                 Forms\Components\TextInput::make('nama')->required()->maxLength(255),
                 Forms\Components\Textarea::make('deskripsi'),
-                Forms\Components\TextInput::make('harga_sewa')->required(),
-                Forms\Components\TextInput::make('stok')->required(),
+                Forms\Components\TextInput::make('harga_sewa')
+                ->numeric()
+                ->required(),
+                Forms\Components\TextInput::make('stok')
+                ->numeric()
+                ->required(),
                 FileUpload::make('gambar')
                 ->image() // Memastikan hanya file gambar yang diterima
                 ->required() // Menandakan bahwa field ini wajib diisi

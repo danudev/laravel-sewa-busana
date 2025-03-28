@@ -23,7 +23,7 @@ class AdminPanelProvider extends PanelProvider
     public function panel(Panel $panel): Panel
     {
         return $panel
-        ->brandName('My Custom Dashboard')
+        ->brandName('Gaun Cantik')
             ->default()
             ->id('admin')
             ->path('admin')
