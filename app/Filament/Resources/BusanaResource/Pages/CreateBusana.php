@@ -27,7 +27,7 @@ class CreateBusana extends CreateRecord
                 ->numeric()
                 ->required(),
                 FileUpload::make('gambar')
-                ->image()
+                ->image() // Memastikan hanya file gambar yang diterima
                 ->required() // Menandakan bahwa field ini wajib diisi
                 ->disk('public') // Menentukan disk untuk penyimpanan, misalnya 'public'
                 ->directory('images') // Menentukan folder tempat gambar disimpan, misalnya 'images'
